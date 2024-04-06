@@ -1,5 +1,6 @@
 
 import java.awt.Image;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -21,6 +22,7 @@ public class Credenciales extends javax.swing.JFrame {
     public Credenciales() {
         
         initComponents();
+        jbVerificar.setIcon(setIcono("/Imagenes/1.png",jbVerificar));
     }
 
     /**
@@ -199,8 +201,6 @@ public class Credenciales extends javax.swing.JFrame {
         }
         //</editor-fold>
         
-       
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -220,4 +220,15 @@ public class Credenciales extends javax.swing.JFrame {
     private javax.swing.JTextField jtContraseña;
     private javax.swing.JTextField jtUsuario;
     // End of variables declaration//GEN-END:variables
+
+public Icon setIcono(String url,JButton boton){
+    ImageIcon icon = new ImageIcon(getClass().getResource(url));
+    int ancho = boton.getWidth();
+    int alto = boton.getHeight();
+    
+    ImageIcon icono = new ImageIcon(icon.getImage().getScaledInstance(ancho, alto, Image.SCALE_DEFAULT));
+    
+    return icono;
+    
+}
 }
