@@ -154,9 +154,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="jbVerificar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/computadora-de-escritorio.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Verificar"/>
               </Properties>
               <Events>

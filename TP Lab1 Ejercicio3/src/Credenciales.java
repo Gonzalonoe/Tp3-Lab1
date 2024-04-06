@@ -67,7 +67,6 @@ public class Credenciales extends javax.swing.JFrame {
 
         jLabel3.setText("Contraseña:");
 
-        jbVerificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computadora-de-escritorio.png"))); // NOI18N
         jbVerificar.setText("Verificar");
         jbVerificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
